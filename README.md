@@ -1,9 +1,14 @@
 # appfinancas
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+## Execução inicial
+- iniciar banco de dados
+ ```sudo service mysql start```
+- executar aplicação no dev mode
+ ```mvn quarkus:dev```
+- Criar lançamento:
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
-
+- testar endpoint lançamento
+```curl --location 'localhost:8080/lancamento'```
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
